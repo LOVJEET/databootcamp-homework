@@ -1,0 +1,14 @@
+db.destinations.insert({"Continent":"North America", "Country":"Canada", "Major Cities":["Toronto", "Montreal"]})
+db.destinations.insert({"Continent":"South America", "Country":"Brazil", "Major Cities":["Rio", "Sao Paulo"]})
+db.destinations.insert({"Continent":"Asia", "Country":"India", "Major Cities":["Mumbai", "Delhi"]})
+db.destinations.insert({"Continent":"North America", "Country":"USA", "Major Cities":["New York", "Chicago"]})
+
+db.ClassDB.insert({"Name":"Kristy", "Age": "30", "Language": "Pandas", "Hobbies":"Netflix"})
+db.ClassDB.insert({"Name":"Amit", "Age": "25", "Language": "Python", "Hobbies":"Bootcamp"})
+db.ClassDB.insert({"Name":"Shao", "Age": "25", "Language": "Python", "Hobbies":"Swimming"})
+db.ClassDB.insert({"Name":"Lovjeet", "Age": "30", "Language": "Pandas", "Hobbies":"Movies"})
+
+
+db.destinations.update({"Continent":"North America"}, {$set:{"Continent":"Americas"}})
+
+db.destinations.update({"Country":"Brazil"}, {$set:{"Capital":"Brasilia"}}, {upsert:true})
